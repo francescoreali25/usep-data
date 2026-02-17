@@ -2,8 +2,8 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>PA.Phil.UP.UM.G.38-19-1</title>
-            <author>Author</author>
+            <title>PA.Phil.UP.UM.G.29-108-254</title>
+            <author>Davide Pironi</author>
             <respStmt>
                <resp>Translation</resp>
                <name>Translator</name>
@@ -14,12 +14,9 @@
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
-               <xi:fallback>
-                  <p>The Publications Statement should appear here. (c) Brown University</p>
-               </xi:fallback>
-            </xi:include>
-            <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.38-19-1">PA.Phil.UP.UM.G.38-19-1</idno>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.29-108-254"
+               >PA.Phil.UP.UM.G.29-108-254</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -28,28 +25,28 @@
                   <settlement>Phil</settlement>
                   <institution>UP</institution>
                   <repository>UM</repository>
-                  <idno>38-19-1</idno>
+                  <idno>29-108-254</idno>
                <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem class="#funerary.epitaph">
-                     <p>fragmentary funerary stele</p>
+                  <msItem class="#magic">
+                     <p>amulet with Greek inscription</p>
                   </msItem>
                </msContents>
                <physDesc>
 
                   <!--  *************************************  <objectDesc>  *********************************  -->
-                  <objectDesc ana="#stele">
-                     <supportDesc ana="#stone.other">
+                  <objectDesc ana="#instrumentum.other">
+                     <supportDesc ana="#metal.bronze">
                         <support>
-                           <p> limestone stele</p>
+                           <p> </p>
                            <dimensions type="surface" unit="cm">
-                              <height>61.5</height>
-                              <width>33.7</width>
-                              <depth>6</depth>
+                              <height>4.5</height>
+                              <width>2.2</width>
+                              <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single">
+                        <condition ana="#complete.intact">
                            <p/>
                         </condition>
                      </supportDesc>
@@ -65,8 +62,9 @@
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
-                        <p>banquet scene, standing woman, and horse with rider depicted in low
-                           relief</p>
+                        <p>obv: rider design and inscription. Rev: long and narrow evil eye with
+                           what seems to be three pupils, pierced by short darts or nails; beneath
+                           the eye appear four animals, though the snake is missing.</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -77,22 +75,18 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="-0100" notAfter="0001">1st century BC</date>
-                     <placeName ref="asia.asia_minor">Smyrna</placeName>
+                     <placeName ref="asia.near_east">Israel, Beit She'an</placeName>
                   </origin>
                </history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#PM"/>
-                  <biblScope unit="item">no. 473</biblScope>
+                  <ptr type="rest-of-bibl" target="#Bonner"/>
+                  <biblScope unit="item">pp. 303, no. 303</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#SEG_28"/>
-                  <biblScope unit="item">no. 1682</biblScope>
-               </bibl>
-               <bibl>
-                  <ref type="external" target="https://www.penn.museum/collections/object/43178">Museum External Reference</ref>
+                  <ref type="external" target="https://www.penn.museum/collections/object/104091"
+                     >Penn Museum web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -108,22 +102,33 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="EM">More tweaks for bib only inscriptions</change>
-         <change when="2020-05-10" who="GG">Added metadata, external reference and image</change>
+         <change who="GG" when="2020-05-10">Added metadata, external reference and image</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-         <change when="2021-07-03" who="Colin Olson">changed stone.limestone to stone.other, fixed
-            capitalization errors, added summary description of decoration, added short summary description of material and support</change>
+         <change when="2021-02-24" who="Elli Mylonas">Change instrumentum to instrumentum.other</change>
+         <change when="2025-09-28" who="Davide Pironi">Edited</change>
+         <change when="2026-02-16" who="Davide Pironi">fixed the filename and made some minor
+            changes</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="PA.Phil.UP.UM.G.38-19-1.jpg"/>
+         <graphic url="PA.Phil.UP.UM.G.29-108-254.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="PA.Phil.UP.UM.G.29-108-254.2.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>εἷς θεὸς ὁ νικ<supplied reason="omitted">ῶν τ</supplied>ὰ κα<unclear>κ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>One God, who conquers evil.</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">

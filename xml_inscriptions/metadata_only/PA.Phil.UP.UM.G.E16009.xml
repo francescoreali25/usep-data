@@ -1,50 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          --><!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.MS5733</title>
-                <author>Mac Carley</author>
+                <title>PA.Phil.UP.UM.G.E16009</title>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
                 </respStmt>
                 <respStmt>
                     <resp>Commentary</resp>
-                    <name>John Bodel</name>
+                    <name>Commenter</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.MS5733">PA.Phil.UP.UM.G.MS5733</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.E16009">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>PA</region>
+                        <region>PA.</region>
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>MS5733</idno>
-                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                        <idno>E16009</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
-                            <!-- short summary of the content of an inscription -->
-                            <p>unknown content</p>
+                        <msItem class="">
+                        <!-- short summary of the content of an inscription -->
+                            <p/>
                         </msItem>
                     </msContents>
 
@@ -54,24 +60,22 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
+                            <supportDesc ana="#stone.other">
                                 <support>
-                                    <p>fragmentary marble slab</p>
+                                    <p>sandstone</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth>2.5+</depth>
-                                        <dim type="diameter">9.5+</dim>
+                                        <height>14</height>
+                                        <width>12.5</width>
+                                        <depth>7.5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>triangular fragment, broken on all three sides with a smooth
-                                        front and rough back</p>
+                                <condition ana="#complete.broken">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="3">
+                                <layout columns="0" writtenLines="0">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -101,7 +105,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
                         <origin>
                             <date evidence="#unknown">unknown</date>
-                            <placeName ref="unknown">unknown</placeName>
+                            <placeName ref="africa.egypt">Qasr Ibrim</placeName>
                         </origin>
 
 
@@ -110,11 +114,9 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/152650">Penn Museum web entry</ref>
-</bibl>
-<bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/326115">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -124,7 +126,8 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
         <encodingDesc>
 
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -139,9 +142,8 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-22" who="Mac Carley">Initial Encoding</change>
-            <change when="2026-02-16" who="Davide Pironi">Fixed: date unknown for lack of
-                evidence</change>
+            <change when="2026-02-17" who="Davide Pironi ">Initial Encoding: metadata and requested
+                change</change>
         </revisionDesc>
 
     </teiHeader>
@@ -152,28 +154,23 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.G.MS5733.jpg"/>
+            <graphic url=""/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>
-                <lb n="1"/>ΟΧΟ
-                <lb n="2"/>ΤΗ
-               <lb n="3"/>-
-            </ab>
-            </div>
+            <ab>Transcription goes here</ab></div>
             
             <div type="translation">
-            <p/></div>
+            <p></p></div>
 
             <div type="commentary">
-            <p>The fragment preserves letters of three lines of text, of which the third line preserves only the serifed top horizontal stroke of a letter (T?).</p></div>
+            <p></p></div>
             
 
-            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
